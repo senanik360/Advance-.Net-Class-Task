@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "details";
+}
+<center>
+    <h2>Registration Form</h2>
+</center>
+
+<html>
+<body>
+    @Html.ValidationSummary()
+    <form action=" " method="post">
+        Name :
+        <input type="text" name="Name" placeholder="Type Your Name" /><br><br>
+        Id:
+        <input type="text" name="ID" placeholder="xx-xxxxx-x" /><br><br>
+        Email:
+        <input type="text" name="Email" placeholder="Type your Email" /> <br><br>
+        Gender:
+        <input type="radio" name="Gender" value="male"> Male
+        <input type="radio" name="Gender" value="female"> Female<br><br>
+        Password:
+        <input type="password" name="Password" placeholder="Enter a valid Password"><br><br>
+        Confirm Password:
+        <input type="password" name="ConfPassword" placeholder="Retype Your password"> <br><br>
+        Date of Birth:
+        <input type="date" name="Dob" placeholder="dd-mm-yyyy" value="" min="1990-01-01" max="2002-01-01" />
+
+        <br><br>
+
+        <input type="submit" value="submit" />
+
+
+
+
+    </form>
+</body>
+</html>
